@@ -9,7 +9,7 @@ sudo systemctl start docker
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add
 # Add repository to apt linux package manager
 sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
-#only for master node
+
 # Install kubelet ,  kube admin , kubectl 
 sudo apt-get install kubeadm kubelet kubectl && sudo apt-mark hold kubeadm kubelet kubectl
 # K8s need to swapoff the memory
