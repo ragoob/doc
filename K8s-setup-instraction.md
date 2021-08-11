@@ -13,7 +13,7 @@ sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
 # Install kubelet ,  kube admin , kubectl 
 sudo apt-get install kubeadm kubelet kubectl && sudo apt-mark hold kubeadm kubelet kubectl
 # K8s need to swapoff the memory
-sudo swapoff –a
+sudo swapoff -a
 #only for master node
 #Intialize k8s 
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16
